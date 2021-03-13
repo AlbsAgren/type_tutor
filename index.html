@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<!--
+Albin Ågren
+alag1901
+alag1901@student.miun.se
+-->
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TypeTutor</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/main.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <section class="logo_area">
+        <a href="index.html"><img  src="img/logo_keyboard.png" alt="TypeTutor Logo"></a>
+        <label>TypeTutor</label>
+      </section>
+    </header>
+
+    <main>
+      <section class="options-area">
+        <span class="button-span">
+          <input type="checkbox" id="ignore-casing">
+          <label for="ignore-casing">Ignore letter case</label><br><br>
+          <input type="radio" name="language" value="swedish" id="swedish" checked>
+          <label for="swedish">Swedish</label>
+          <input type="radio" name="language" value="english" id="english">
+          <label for="english">English</label>
+        </span>
+        <span>
+          <label for="text-selector" class="selector-label">Select a text:</label>
+          <select id="text-selector"></select>
+        </span>
+      </section>
+
+      <section class="text-details">
+        <h2 id="text-title"></h2>
+        <p id="text-info"></p>
+        <div id="text-content" class="text-content"></div>
+      </section>
+
+      <section>
+        <input type="text" class="input-field" id="input-field" placeholder="Type here!" disabled><br>
+        <input type="image" src="img/play_button.png" alt="play-button" class="play-button" id="play-button">
+        <audio id="error-sound" preload="auto">
+          <source src="audio/error_sound.wav" type="audio/wav">
+          <source src="audio/error_sound.mp3" type="audo/mpeg">
+        </audio>
+      </section>
+
+      <section class="stats-area">
+        <p class="stats-field">Gross WPM: <span class="stats-value" id="gross-wpm">0</span></p>
+        <p class="stats-field">Net WPM: <span class="stats-value" id="net-wpm">0</span></p>
+        <p class="stats-field">Accuracy: <span class="stats-value" id="accuracy">0</span><span class="percent-sign">%</span></p>
+        <p class="stats-field">Errors: <span class="stats-value" id="errors">0</span></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&#169; 2020 Albin Ågren, no rights reserved.</p>
+      <a href="mailto:alag1901@student.miun.se">Send me an email</a>
+    </footer>
+  </body>

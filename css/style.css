@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Montaga";
+  src: url("../font/Montaga-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Shadows Into Light";
+  src: url("../font/ShadowsIntoLight-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cutive Mono";
+  src: url("../font/CutiveMono-Regular.ttf") format("truetype");
+}
+
+body                { background-image: url("../img/cheap_diagonal_fabric.png");
+                      font-family: "Montaga", serif;
+                      margin: auto;
+                      text-align: center;
+                      width: 600px; }
+header img          { height: 150px;
+                      width: auto; }
+header label        { animation-direction: alternate;
+                      animation-duration: 5s;
+                      animation-iteration-count: infinite;
+                      animation-name: blackToWhite;
+                      font-family: "Shadows Into Light", cursive;
+                      font-size: 36pt;
+                      margin-left: 20px; }
+select              { background-color: rgba(0, 0, 0, 0);
+                      border: 2px solid grey;
+                      border-radius: 5px;
+                      padding: 5px;
+                      width: 250px; }
+footer              { border-top: 2.5px groove gray;
+                      color: gray;
+                      margin-bottom: 25px; }
+footer a            { color: gray; }
+.logo_area          { align-items: center;
+                      display: flex;
+                      justify-content: center; }
+.options-area       { display: flex;
+                      flex-flow: row;
+                      justify-content: space-around;
+                      margin-top: 50px; }
+.button-span        { text-align: left; }
+.selector-label     { display: block; }
+.untyped-char       { color: white; }
+.text-details       { background-color: rgba(0, 0, 0, 0.3);
+                      border: 5px groove gray;
+                      margin-top: 30px;
+                      min-height: 200px;
+                      padding-bottom: 2em; }
+.text-content       { background: transparent;
+                      font-family: "Cutive Mono", Courier New, monospace;
+                      font-size: 14pt;
+                      padding: 5px 20px 5px 20px;
+                      text-align: left;
+                      width: 550px;
+                      white-space: pre-wrap; }
+.selected-char      { background-color: rgba(0, 0, 0, 0.5);
+                      color: white; }
+.typed-char         { color: black; }
+.incorrect-char     { color: red; }
+.input-field        { background-color: rgba(0, 0, 0, 0.3);
+                      border: 5px groove gray;
+                      font-size: 16pt;
+                      margin-top: 40px;
+                      text-align: center;}
+.play-button        { margin-top: 20px; }
+.stats-area         { display: grid;
+                      grid-template-columns: 175px 175px;
+                      grid-column-gap: 25px;
+                      margin: 50px 100px 25px 100px; }
+.stats-field        { font-size: 16pt;
+                      height: 2em;
+                      text-align: right; }
+.stats-value        { color: gray; }
+.percent-sign       { color: gray; }
+
+@keyframes blackToWhite {
+  from {
+    color: black;
+  }
+  to {
+    color: white;
+  }
+}
